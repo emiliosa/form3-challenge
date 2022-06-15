@@ -14,7 +14,7 @@ docker-compose up -d --build
 ```
 * Check logs and test result
 ```bash
-docker logs interview-accountapi_accountapi-sdk_1 --follow
+docker logs form3-challenge-accountapi-sdk --follow
 ```
 
 ## How to use
