@@ -26,6 +26,7 @@ services:
     build:
       context: ./sdk
       dockerfile: Dockerfile
+    restart: on-failure
     depends_on:
       - accountapi
     environment:
@@ -36,7 +37,7 @@ services:
     links:
       - accountapi
     working_dir: /app
-    command: sh -c "make all"
+    command: ["sh", "-c", "make all"]
 
   postgresql:
     image: postgres:9.5-alpine
