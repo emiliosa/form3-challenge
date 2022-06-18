@@ -1,5 +1,8 @@
 # Form3 challenge
 
+## Authors
+- Emiliano Abarca
+
 ## Description
 The goal of this exercise is to provide a **Go SDK Client (Account)** to access our fake account API, which is provided as a Docker
 container in the file `docker-compose.yaml` of this repository.
@@ -70,6 +73,9 @@ if err != nil {
 
 fmt.Printf("result from Delete: %v\n", result)
 ```
+
+### Notes
+- I'm Golang newbie, be nice to me
 
 ### TODO
 * Migrate library to Go package
